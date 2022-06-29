@@ -52,6 +52,9 @@ For memory, we create two functions,
 - cache(): Each time Mario performs an action, he stores the experience to his memory. His experience includes the current state, action performed, reward from the action, the next state, and whether the game is done.
 
 - recall(): Mario randomly samples a batch of experiences from his memory, and uses that to learn the game.
+
+# Learn
+The Reinforcement Learning Algorithm that our Mario Agent uses is the Double Deep Q-Learning Network Algorithm. DDQN uses two ConvNets - Qonline and Qtarget that independently approximate the optimal action-value function. 
 ## number of episodes : 100
 #learning increases with increasing number of episodes
 reference: https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html#conclusion
