@@ -30,7 +30,17 @@ sentence 3
 3. SkipFrame: Consecutive frames don’t vary much, we can skip n-intermediate frames without losing much information. The n-th frame aggregates rewards accumulated over each skipped frame.
 3. FrameStack: Then we squash consecutive frames of the environment into a single observation point to feed to our learning model. This way, we can identify if Mario was landing or jumping based on the direction of his movement in the previous several frames.
 ```
-#number of episodes : 100
+After applying the wrappers, we get the final wrapped state consisting of 4 gray-scaled consecutive frames stacked together. Each time Mario makes an action, the environment responds with a state of this structure. The structure is represented by a 3-D array of size [4, 84, 84]
+
+# Agent:
+## Mario is our agent who takes decisions in the Super Mario Environment based on rewards and punishments after every action. 
+## There are three actions of an agent:
+```
+!Act according to the optimal action policy based on the current state (of the environment).
+!Remember experiences. Experience = (current state, current action, reward, next state). Mario caches and later recalls his experiences to update his action policy.
+!Learn a better action policy over time
+```
+## number of episodes : 100
 #learning increases with increasing number of episodes
 reference: https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html#conclusion
 
