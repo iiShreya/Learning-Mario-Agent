@@ -61,7 +61,6 @@ The Reinforcement Learning Algorithm that our Mario Agent uses is the Double Dee
 Mini cnn structure
   input -> (conv2d + relu) x 3 -> flatten -> (dense + relu) x 2 -> output
   ```
-## number of episodes : 100
-#learning increases with increasing number of episodes
-reference: https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html#conclusion
+
+[reference](https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html#conclusion)
 
