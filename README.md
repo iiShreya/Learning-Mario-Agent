@@ -35,7 +35,7 @@ After applying the wrappers, we get the final wrapped state consisting of 4 gray
 # Agent:
 ## Mario is our agent who takes decisions in the Super Mario Environment based on rewards and punishments after every action. 
 ## There are three actions of an agent:
-```
+```diff
 ! Act according to the optimal action policy based on the current state (of the environment).
 ! Remember experiences. Experience = (current state, current action, reward, next state). Mario caches and later recalls his experiences to update his action policy.
 ! Learn a better action policy over time
