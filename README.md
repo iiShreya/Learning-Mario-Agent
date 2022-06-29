@@ -61,11 +61,26 @@ The Reinforcement Learning Algorithm that our Mario Agent uses is the Double Dee
 Mini cnn structure
   input -> (conv2d + relu) x 3 -> flatten -> (dense + relu) x 2 -> output
   ```
-#Calculating the TD Target and TD Estimate
+# Calculating the TD Target and TD Estimate
 
 ![Alt Text](https://github.com/iiShreya/Learning-Mario-Agent/blob/master/images/tdtarget_tdestimate.png)
 
-#Updating the Model
-
+# Updating the Model
+![Alt Text](https://github.com/iiShreya/Learning-Mario-Agent/blob/master/images/update.png)
+# Metrics
+- episode rewards
+- episode lengths
+- episode average loss 
+- episode average Q values
+# Print
+- Episode
+- Step
+- Epsilon
+- Mean Reward
+- Mean Length
+- Mean Loss
+- Mean Q Value
+- Time Delta 
+- Time
 [reference](https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html#conclusion)
 
