@@ -55,6 +55,10 @@ For memory, we create two functions,
 
 # Learn
 The Reinforcement Learning Algorithm that our Mario Agent uses is the Double Deep Q-Learning Network Algorithm. DDQN uses two ConvNets - Qonline and Qtarget that independently approximate the optimal action-value function. 
+```
+Mini cnn structure
+  input -> (conv2d + relu) x 3 -> flatten -> (dense + relu) x 2 -> output
+  ```
 ## number of episodes : 100
 #learning increases with increasing number of episodes
 reference: https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html#conclusion
