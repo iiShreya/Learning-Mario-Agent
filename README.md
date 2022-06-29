@@ -82,5 +82,7 @@ Mini cnn structure
 - Mean Q Value
 - Time Delta 
 - Time
+
+
 [reference](https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html#conclusion)
 
