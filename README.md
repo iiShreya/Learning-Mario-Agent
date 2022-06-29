@@ -45,7 +45,7 @@ After applying the wrappers, we get the final wrapped state consisting of 4 gray
 For a state, an agent can choose to Explore or Exploit. 
 Explore: take a random action
 Exploit: choose the most optimal action 
-We start with a high value of exploration and decrease the exploration rate with increasing time steps. 
+We start with a high value of exploration and decrease the exploration rate with increasing time steps.\
 Limiting the action space to:
 0. walk right
 1. jump right
