@@ -41,6 +41,17 @@ After applying the wrappers, we get the final wrapped state consisting of 4 gray
 ! Learn a better action policy over time
 
 ```
+# Act
+For a state, an agent can choose to Explore or Exploit. 
+Explore: take a random action
+Exploit: choose the most optimal action 
+We start with a high value of exploration and decrease the exploration rate with increasing time steps. 
+
+# Remember/Memory
+For memory, we create two functions, 
+- cache(): Each time Mario performs an action, he stores the experience to his memory. His experience includes the current state, action performed, reward from the action, the next state, and whether the game is done.
+
+- recall(): Mario randomly samples a batch of experiences from his memory, and uses that to learn the game.
 ## number of episodes : 100
 #learning increases with increasing number of episodes
 reference: https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html#conclusion
