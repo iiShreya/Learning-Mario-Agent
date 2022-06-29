@@ -19,6 +19,10 @@ def func():
 func = func2(func)
 func()
 
+Output: 
+sentence 1
+sentence 2
+sentence 3
 ```
 ```diff
 1. GrayScaleObservation: Transform an RGB image to grayscale. By doing so reduces the size of the state representation without losing useful information.
