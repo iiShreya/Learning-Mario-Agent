@@ -47,7 +47,7 @@ Explore: take a random action
 Exploit: choose the most optimal action 
 We start with a high value of exploration and decrease the exploration rate with increasing time steps.\
 Limiting the action space to:\
-0. walk right
+0. walk right\
 1. jump right
 # Remember/Memory
 For memory, we create two functions, 
