@@ -4,7 +4,7 @@
 # Preprocess the data:
 1. Applying wrappers to environment: 
 ## What are Wrappers? 
-Wrappers around functions are also knows as decorators which are a very powerful and useful tool in Python since it allows programmers to modify the behavior of function or class. Decorators allow us to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.
+Wrappers around functions are also knows as decorators which are very powerful and useful tool in Python since it allows programmers to modify the behavior of function or class. Decorators allow us to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.
 ```python
 def func2(func):
     def ref():
